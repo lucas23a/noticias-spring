@@ -1,4 +1,4 @@
-package com.servicios;
+package com.egg.servicios;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -9,14 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.entidades.Noticia;
-import com.excepciones.MiException;
-import com.repositorios.NoticiaRepositorio;
+import com.egg.entidades.Noticia;
+import com.egg.excepciones.MiException;
+import com.egg.repositorios.NoticiaRepositorio;
 
 @Service
 public class NoticiaServicio {
 
-    //@Autowired (required=false)
+    @Autowired 
     private NoticiaRepositorio notiRepositorio;
 
     @Transactional

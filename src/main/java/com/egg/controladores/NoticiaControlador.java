@@ -1,4 +1,4 @@
-package com.controladores;
+package com.egg.controladores;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.excepciones.MiException;
-import com.servicios.NoticiaServicio;
+import com.egg.excepciones.MiException;
+import com.egg.servicios.NoticiaServicio;
 
 @Controller
 @RequestMapping("/noticia")
 public class NoticiaControlador {
-   @Autowired (required=false)
+   @Autowired 
     private NoticiaServicio notiService= new NoticiaServicio();
 
     @GetMapping("/nueva")
