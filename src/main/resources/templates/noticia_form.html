@@ -18,7 +18,21 @@
           </div>
           <button class="btn btn-primary" type="submit">Subir</button>
     </form>
+    <div th:if ="${exito != null}" class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header"></div>
+        <div class="card-body text-success">
+          <h5 class="card-title">Exito </h5>
+          <p class="card-text" th:text="${exito}"></p>
+        </div>
+      </div>
 
+      <div th:if ="${error != null}" class="card border-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header">Advertencia</div>
+        <div class="card-body text-danger">
+          <h5 class="card-title">Error</h5>
+          <p class="card-text" th:text="${error}"></p>
+        </div>
+      </div>
 
 
 
